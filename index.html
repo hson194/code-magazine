@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>The Basic Language of the Web: HTML</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -19,7 +20,7 @@
     </header>
 
     <article>
-      <header>
+      <header class="post-header">
         <h2>The Basic Language of the Web: HTML</h2>
 
         <img
@@ -28,7 +29,9 @@
           width="50"
         />
 
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2022</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2022
+        </p>
 
         <img
           src="images/post-img.jpg"
@@ -101,6 +104,31 @@
 
       <p>Hopefully you learned something new here. See you next time!</p>
     </article>
-    <footer>Copyright &copy; 2022 The Code Magazine</footer>
+
+    <aside>
+      <h4>Related Posts</h4>
+
+      <ul class="related">
+        <li>
+          <img src="images/related-1.jpg" width="75" />
+          <a href="#">How to Learn Web Development</a>
+          <p class="related-author">By Jonas Schmedtmann</p>
+        </li>
+        <li>
+          <img src="images/related-2.jpg" width="75" />
+          <a href="#">The Unkown Powers of CSS</a>
+          <p class="related-author">By Jim Dillon</p>
+        </li>
+        <li>
+          <img src="images/related-3.jpg" width="75" />
+          <a href="#">Why JavaScript is Awesome</a>
+          <p class="related-author">By Matilda</p>
+        </li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p id="copyright">Copyright &copy; 2022 The Code Magazine</p>
+    </footer>
   </body>
 </html>
