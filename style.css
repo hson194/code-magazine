@@ -28,9 +28,22 @@ aside {
 }
 
 .container {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
   position: relative;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 /* HEADERS */
@@ -39,7 +52,10 @@ aside {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .post-header {
@@ -76,6 +92,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 h1::first-letter {
@@ -113,9 +130,15 @@ p {
   font-size: 16px;
 }
 
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
 .related-author {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 0;
 }
 
 /* LISTS */
@@ -170,12 +193,19 @@ a:active {
 
 nav a:link {
   display: inline-block;
+  font-weight: bold;
   margin-right: 30px;
-  margin-top: 10px;
 }
 
 nav a:link:last-child {
   margin-right: 0;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
 }
 
 /* OTHER */
