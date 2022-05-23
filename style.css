@@ -24,6 +24,13 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
+  width: 500px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* HEADERS */
@@ -32,6 +39,7 @@ aside {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 .post-header {
@@ -49,6 +57,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
@@ -67,6 +76,24 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 
 /* TEXT */
@@ -139,4 +166,30 @@ a:hover {
 a:active {
   color: black;
   text-decoration: underline black;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/* OTHER */
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
